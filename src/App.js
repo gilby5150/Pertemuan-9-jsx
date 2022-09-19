@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/layout/Navbar'
+import gilby from './components/image/gilby.jpg'
 
 function App() {
   return (
-    <div className="App">
+      <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Nav/>
+        </header>
+        <body className='App-body'>
+        <img src={gilby} className="App-logo" alt="logo" />
+        <h1>Bootcamp batch 3</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Gilby Faqih
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          
+        </body>
+        <footer className='App-footer'></footer>
     </div>
   );
 }
