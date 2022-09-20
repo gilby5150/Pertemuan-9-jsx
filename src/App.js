@@ -1,28 +1,24 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Nav from './components/layout/Navbar'
-import User from './components/user'
-import gilby from './components/image/gilby.jpg'
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
-  // const date = new Date();
-  // const time = date.toLocaleTimeString();
   return (
-      <div className="App">
-      <header className="App-header">
+    <Router>
+      <div className='App-header'>
       <Nav/>
-        </header>
-        <body className='App-body'>
-        {/* <img src={gilby} className="App-logo" alt="logo" />
-        <h1>Bootcamp batch 3</h1>
-        <p>
-          Gilby Faqih
-        </p> */}
-          <h1>{new Date().toLocaleTimeString()}</h1>
-          <input type="number" max={5} style={{border:"3px solid", color:"blue"}}/>
-          <User name="Gilby" umur="21"/>
-        </body>
-        <footer className='App-footer'></footer>
-    </div>
+      </div>
+      <div className='App-body'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+        </div> 
+    </Router>
   );
 }
 

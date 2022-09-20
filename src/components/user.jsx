@@ -1,8 +1,8 @@
-const User = ({name,umur})=>{
+const User = ({name,age})=>{
     return (
         <div>
             <h1>Name : {name}</h1>
-            <span>Age : {umur}</span>            
+            <span>Age : {age}</span>            
         </div>
     )
 }
