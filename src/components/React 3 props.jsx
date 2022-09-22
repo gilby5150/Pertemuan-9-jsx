@@ -1,10 +1,13 @@
 import { faker } from "@faker-js/faker";
+// import faker untuk regenerate data dari fakerjs
 import User from "./User";
+// import user untuk get props dari page user
 const Comment = () => {
     return (
         <div className="ui container comments">
             <div className="comment">
                 <a href="/" className="avatar">
+                    {/* src={faker.image.avatar()} data dari fakerjs untuk generate otomatis avatar */}
                     <img alt="avatar" src={faker.image.avatar()}/>
                 </a>
             </div>
