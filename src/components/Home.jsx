@@ -1,4 +1,5 @@
 import User from './User'
+import Like from './Like'
 
 const Home = () => {
   const date = new Date()
@@ -14,6 +15,7 @@ const Home = () => {
       <div style={{ borderBottom: '1px solid white', width: '50%', margin: '40px 0' }} />
       <User name="Adit" age="30" />
       <User name="Gilby" age="20" />
+      <Like/>
       </div>
     </>
   )
