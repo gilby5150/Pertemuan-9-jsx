@@ -1,5 +1,6 @@
 import User from './User'
 import Like from './Like'
+import Clock from './Clock';
 
 const Home = () => {
   const date = new Date()
@@ -8,7 +9,8 @@ const Home = () => {
   return (
     <>
       <div className='App-body'>
-        {time}
+        <p>refresh page : {time}</p>        
+        <p>real time : <Clock/></p>
       <h2>Bootcamp Batch 3</h2>
       <span>Gilby</span>
 
