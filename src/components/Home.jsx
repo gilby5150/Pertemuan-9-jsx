@@ -1,6 +1,7 @@
 import User from './User'
 import Like from './Like'
 import Clock from './Clock';
+import Form from './Form';
 
 const Home = () => {
   const date = new Date()
@@ -18,6 +19,7 @@ const Home = () => {
       <User name="Adit" age="30" />
       <User name="Gilby" age="20" />
       <Like/>
+      <Form/>
       </div>
     </>
   )
