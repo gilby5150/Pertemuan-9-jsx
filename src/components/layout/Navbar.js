@@ -1,12 +1,12 @@
 function Nav() {
     return(
-    <div class="b-example-divider">
-        <header class="d-flex justify-content-center py-3">
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="/Contact" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="/Comment" class="nav-link">Comment</a></li>
+    <div className="b-example-divider">
+        <header className="d-flex justify-content-center py-3">
+            <ul className="nav nav-pills">
+                <li className="nav-item"><a href="/" className="nav-link">Home</a></li>
+                <li className="nav-item"><a href="/about" className="nav-link">About</a></li>
+                <li className="nav-item"><a href="/Contact" className="nav-link">Contact</a></li>
+                <li className="nav-item"><a href="/Comment" className="nav-link">Comment</a></li>
             </ul>
         </header>
     </div>

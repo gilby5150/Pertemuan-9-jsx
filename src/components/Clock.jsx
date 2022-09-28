@@ -10,7 +10,6 @@ const Clock = () => {
     },[]);
     return(
         <p>
-            {''}
             {dateState.toLocaleString('id-ID',{
                 hour:'numeric',
                 minute:'numeric',

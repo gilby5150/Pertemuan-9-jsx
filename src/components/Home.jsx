@@ -2,6 +2,7 @@ import User from './User'
 import Like from './Like'
 import Clock from './Clock';
 import Form from './Form';
+import Search from './Search';
 
 const Home = () => {
   const date = new Date()
@@ -20,6 +21,7 @@ const Home = () => {
       <User name="Gilby" age="20" />
       <Like/>
       <Form/>
+      <Search/>
       </div>
     </>
   )

@@ -1,55 +1,44 @@
-import { Component } from "react";
+import { Component, useState } from "react";
 
-class Form extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { FirstName: "", LastName: "" };
+const Form = () => {
+  const [value, setValue] = useState({ FirstName: "", LastName: "" });
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+  const handleChange = (e) => {
+    setValue({ ...value, [e.target.name]: e.target.value });
+  };
 
-  handleChange(event){
-    this.setState({
-      [event.target.name] : event.target.value
-    })
-  }
-  
-  handleSubmit(event) {
-    const { FirstName, LastName } = this.state;
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert(`
-      FirstName : ${FirstName}
-      LastName : ${LastName}
+      FirstName : ${value.FirstName}
+      LastName : ${value.LastName}
       
     `);
-  }
+  };
 
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          First Name :
-          <input
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        First Name :
+        <input
           name="FirstName"
-            type="text"
-            value={this.state.FirstName}
-            onChange={this.handleChange}
-          />
-        </label>
-        <label>
-          Last Name :
-          <input
+          type="text"
+          value={value.FirstName}
+          onChange={handleChange}
+        />
+      </label>
+      <label>
+        Last Name :
+        <input
           name="LastName"
-            type="text"
-            value={this.state.LastName}
-            onChange={this.handleChange}
-          />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    );
-  }
-}
+          type="text"
+          value={value.LastName}
+          onChange={handleChange}
+        />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  );
+};
 
 export default Form;
