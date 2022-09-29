@@ -1,4 +1,4 @@
-import { Component, useState } from "react";
+import { useState } from "react";
 
 const Form = () => {
   const [value, setValue] = useState({ FirstName: "", LastName: "" });

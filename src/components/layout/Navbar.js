@@ -7,6 +7,7 @@ function Nav() {
                 <li className="nav-item"><a href="/about" className="nav-link">About</a></li>
                 <li className="nav-item"><a href="/Contact" className="nav-link">Contact</a></li>
                 <li className="nav-item"><a href="/Comment" className="nav-link">Comment</a></li>
+                <li className="nav-item"><a href="/Search" className="nav-link">Search</a></li>
             </ul>
         </header>
     </div>
