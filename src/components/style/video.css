@@ -1,0 +1,20 @@
+.video-item {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+
+.ui.container {
+    height: 100vh;
+    width: 100%;
+    margin-left: 1%!important;
+    margin-right: 1%!important;
+}
+
+.video-item.item img {
+    max-width: 200px;
+    max-height: 250px ;
+}
+.ui.list .list>.item .header, .ui.list>.item .header {
+    font-size: small;
+}
