@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Comment from './components/Comment';
 import Search from './components/Search';
 import YoutubeApp from './components/Youtube';
+import HookColor from './components/HookColor';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/Comment" element={<Comment />} />
           <Route path="/Search" element={<Search />} />
           <Route path="/Youtube" element={<YoutubeApp />} />
+          <Route path="/Hook" element={<HookColor />} />
         </Routes>
       </div>
     </Router>
