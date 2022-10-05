@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
 import Clock from "./Clock";
 // Create a function with hook
 function HookColor() {

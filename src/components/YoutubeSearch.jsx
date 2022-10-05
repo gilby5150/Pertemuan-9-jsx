@@ -1,35 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
-class YoutubeSearch extends React.Component {
-  state = {
-    term: "",
-  };
-  handleChange = (event) => {
-    this.setState({
-      term: event.target.value,
-    });
-  };
-  handleSubmit = (event) => {
-    event.preventDefault();
-    this.props.handleFormSubmit(this.state.term);
-  };
-  render() {
-    return (
-      <div className="search-bar ui segment">
-        <form onSubmit={this.handleSubmit} className="ui form">
-          <div className="field">
-            <label htmlFor="video-search">Video Search</label>
-            <input
-              onChange={this.handleChange}
-              name="video-search"
-              type="text"
-              value={this.state.term}
-            />
-          </div>
-        </form>
-      </div>
+const YoutubeSearch = ({handleFormSubmit}) => {
+  const [state, setState] = useState('')
+  
+  const handleChange = (event) =>{
+    setState(
+      event.target.value,
     );
-  }
-}
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    handleFormSubmit(state);
+  };
+  
+  return (
+    <div className="search-bar ui segment">
+      <form onSubmit={handleSubmit} className="ui form">
+        <div className="field">
+          <label htmlFor="video-search">Video Search</label>
+          <input
+            onChange={handleChange}
+            name="video-search"
+            type="text"
+            value={state}
+          />
+        </div>
+      </form>
+    </div>
+  );
+};
 
 export default YoutubeSearch;
