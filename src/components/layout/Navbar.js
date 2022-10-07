@@ -10,6 +10,7 @@ function Nav() {
                 <li className="nav-item"><a href="/Search" className="nav-link">Search</a></li>
                 <li className="nav-item"><a href="/Youtube" className="nav-link">Youtube</a></li>
                 <li className="nav-item"><a href="/Hook" className="nav-link">Hook Color</a></li>
+                <li className="nav-item"><a href="/Redux" className="nav-link">Redux</a></li>
             </ul>
         </header>
     </div>

@@ -8,6 +8,7 @@ import Comment from './components/Comment';
 import Search from './components/Search';
 import YoutubeApp from './components/Youtube';
 import HookColor from './components/HookColor';
+import Counter from "./features/counter/Counter";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Search" element={<Search />} />
           <Route path="/Youtube" element={<YoutubeApp />} />
           <Route path="/Hook" element={<HookColor />} />
+          <Route path="/Redux" element={<Counter />} />
         </Routes>
       </div>
     </Router>
