@@ -5,8 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import {createStore, applyMiddleware} from "redux";
 import thunk from "redux-thunk";
-
-import App from './Redux Async/components/App';
+import App from './App';
+// import App from './Redux Async/components/App';
 import reducers from "./Redux Async/reducers"
 
 // As of React 18
