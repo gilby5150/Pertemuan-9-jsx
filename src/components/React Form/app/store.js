@@ -1,11 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-// Add Slice reducer to the store
-import counterReducer from '../features/counter/counterSlice'
+import formReducer from '../reducer'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
 export default configureStore({
   reducer: {
-    counter : counterReducer,
+    form : formReducer,
   },
   composeWithDevTools
 })
