@@ -1,20 +1,23 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "./Styles";
 import { Form, Field } from "react-final-form";
-import  formSubmit  from "../actions/index";
+import formSubmit from "../actions/index";
 import { useDispatch } from "react-redux";
+import { API } from "../config/api";
 
 const ReactForm = () => {
 
     const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
     const dispatch = useDispatch()
+
     const onSubmit = async (values) => {
         await sleep(300);
+        let response = await API.post('/post', values)
         dispatch(formSubmit(values));
         window.alert(JSON.stringify(values, 0, 2));
-    };    
+        console.log(response);
+    };
 
     return (
 

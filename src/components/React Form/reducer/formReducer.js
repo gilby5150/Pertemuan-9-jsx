@@ -1,4 +1,4 @@
-export default (state = [], action) =>{
+export default (state = [], action) => {
     switch (action.type) {
         case "SUBMIT_FORM":
             return action.payload;
@@ -6,3 +6,4 @@ export default (state = [], action) =>{
             return state;
     }
 };
+

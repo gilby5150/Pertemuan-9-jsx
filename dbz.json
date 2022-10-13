@@ -1,0 +1,27 @@
+{
+  "post": [
+    {
+      "technology": "Front-End",
+      "employed": false,
+      "firstName": "Gilby",
+      "lastName": "Faqih",
+      "id": 1
+    },
+    {
+      "technology": "Front End",
+      "employed": true,
+      "firstName": "Gilby",
+      "lastName": "Faqih",
+      "Education": "High School",
+      "Expertise": [
+        "HTML",
+        "CSS",
+        "ReactJS",
+        "NodeJS",
+        "Javascript"
+      ],
+      "notes": "haha",
+      "id": 2
+    }
+  ]
+}
